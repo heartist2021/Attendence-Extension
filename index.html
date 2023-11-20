@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div id="attendance-container">
+      <h1>Attendance Tracker</h1>
+      <div id="registration-form">
+    <label for="worker-name">Worker Name:</label>
+    <input type="text" id="worker-name">
+
+    <label for="in-time">In-Time:</label>
+    <input type="datetime-local" id="in-time">
+
+    <label for="out-time">Out-Time:</label>
+    <input type="datetime-local" id="out-time">
+
+    <label for="leave-options">Leave Options:</label>
+    <select id="leave-options">
+      <option value="present">Present</option>
+      <option value="half-day">Half Day</option>
+      <option value="full-day">Full Day</option>
+      <option value="leave">Leave</option>
+    </select>
+    <button id="register-button">Register Attendance</button>
+  </div>
+
+  <h2>Monthly Attendance Report</h2>
+  <table id="attendance-report">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Worker Name</th>
+        <th>In-Time</th>
+        <th>Out-Time</th>
+        <th>Leave Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Attendance records will be dynamically added here -->
+    </tbody>
+    
+  </table>
+  <div id="calendar-container">
+    <h2>Attendance Calendar</h2>
+    <div id="calendar"></div>
+  </div>
+
+  <!-- Add these buttons for downloading and displaying the report -->
+  <button id="download-button">Download Report</button>
+  <button id="display-button">Display Report</button>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
