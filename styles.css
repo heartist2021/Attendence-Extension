@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  #attendance-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #registration-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input, select, button {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  .popup-container {
+    width: 300px; /* Adjust this width to your preference */
+    min-height: 200px; /* Adjust this height to your preference */
+    padding: 20px;
+  }
+  #calendar-container {
+    margin-top: 20px;
+  }
+  
+  #calendar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .calendar-entry {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .leave {
+    background-color: #ffcccc; /* Light red for leave */
+  }
+  
+  .present {
+    background-color: #ccffcc; /* Light green for present */
+  }
